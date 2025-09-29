@@ -1,7 +1,10 @@
-def add(num1,num2):
+def get_add(num1,num2):
     result = num1 + num2
     print(int(result))
 
+def get_subtracked(nuim1,num2):
+    result = num1 - num2
+    print(int(result))
 
 while True:
     with open("epiloges.txt","r",encoding="utf-8") as file:
@@ -13,6 +16,8 @@ while True:
     num2 = float(input("Βάλε τον δεύτερο αριθμό: "))
 
     if operation.startswith("1"):
-        get_add = add(num1, num2)
+        add = get_add(num1, num2)
+    elif operation.startswith("2"):
+        subtracked = get_subtracked(num1,num2)
 
 
