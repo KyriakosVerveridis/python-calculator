@@ -2,11 +2,13 @@ def get_add(num1,num2):
     result = num1 + num2
     print(int(result))
 
-def get_subtracked(nuim1,num2):
+def get_subtracked(num1,num2):
     result = num1 - num2
     print(int(result))
 
-def get
+def get_multiply(num1,num2):
+    result = num1 * num2
+    print(int(result))
 
 while True:
     with open("epiloges.txt","r",encoding="utf-8") as file:
@@ -21,5 +23,7 @@ while True:
         add = get_add(num1, num2)
     elif operation.startswith("2"):
         subtracked = get_subtracked(num1,num2)
+    elif operation.startswith("3"):
+        multiply = get_multiply(num1,num2)
 
 
