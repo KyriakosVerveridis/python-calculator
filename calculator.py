@@ -6,6 +6,8 @@ def get_subtracked(nuim1,num2):
     result = num1 - num2
     print(int(result))
 
+def get
+
 while True:
     with open("epiloges.txt","r",encoding="utf-8") as file:
         content = file.read()
