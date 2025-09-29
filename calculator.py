@@ -20,7 +20,7 @@ while True:
         print(content)
 
     operation = input("Κάνε μια επιλογή (πχ.1) για Πρόσθαιση: ")
-    while int(operation) < 1 or int(operation) > 5:
+    while not operation.isdigit() or int(operation) < 1 or int(operation) > 5:
         print("Μη έγκυρη επιλογη διαλεγε 1,2,3,4,5")
         operation = input("Κάνε μια επιλογή (πχ.1) για Πρόσθαιση: ")
     if operation.startswith("5"):
