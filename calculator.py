@@ -1,18 +1,29 @@
+
+results = []
+
 def get_add(num1,num2):
     result = num1 + num2
+    results.append(result)
     print(int(result))
+    return results
 
 def get_subtracked(num1,num2):
     result = num1 - num2
+    results.append(result)
     print(int(result))
+    return results
 
 def get_multiply(num1,num2):
     result = num1 * num2
+    results.append(result)
     print(int(result))
+    return results
 
 def get_divide(num1,num2):
     result = num1 / num2
+    results.append(result)
     print(int(result))
+    return results
 
 while True:
     with open("epiloges.txt","r",encoding="utf-8") as file:
@@ -39,6 +50,8 @@ while True:
             divide = get_divide(num1,num2)
         except ZeroDivisionError:
             print("0")
+    int_results = [int(num) for num in results]
+    print(f"Ιστορικό τελευταίων πράξεων {int_results}")
 
 
 
