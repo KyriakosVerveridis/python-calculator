@@ -30,10 +30,10 @@ while True:
         content = file.read()
         print(content)
 
-    operation = input("Κάνε μια επιλογή (πχ.1) για Πρόσθαιση: ")
+    operation = input("Κάνε μια επιλογή (πχ.1) για Πρόσθεση: ")
     while not operation.isdigit() or int(operation) < 1 or int(operation) > 5:
         print("Μη έγκυρη επιλογη διαλεγε 1,2,3,4,5")
-        operation = input("Κάνε μια επιλογή (πχ.1) για Πρόσθαιση: ")
+        operation = input("Κάνε μια επιλογή (πχ.1) για Πρόσθεση: ")
     if operation.startswith("5"):
         break
     num1 = float(input("Βάλε τον πρώτο αριθμό: "))
